@@ -8,6 +8,11 @@ body {
     overflow-x: hidden;
 }
 
+.main_wraper {
+    min-height: 100vh;
+    position: relative;
+}
+
 /* ------------- Glavni meni -------------- */
 nav {
     display: grid;
@@ -394,7 +399,6 @@ footer {
     background-color: #f7a32e;
     color: white;
     text-align: center;
-    display: block;
 }
 
 footer p {
