@@ -13,7 +13,6 @@ body {
     position: relative;
 }
 
-/* ------------- Glavni meni -------------- */
 nav {
     display: grid;
     grid-gap: 10px;
@@ -53,7 +52,6 @@ nav a.active {
     text-decoration: underline;
 }
 
-/* ------------- Glavni meni end -------------- */
 #hero_img {
     background: #ffffff url("../img/hero.jpeg") no-repeat center;
     background-size: cover;
@@ -308,7 +306,6 @@ footer p {
     z-index: 99999;
 }
 
-/* Gallery page */
 #gallery {
     width: 80%;
     margin: 0 auto;
