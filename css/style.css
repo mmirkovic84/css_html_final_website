@@ -53,36 +53,6 @@ nav a.active {
     text-decoration: underline;
 }
 
-/* Glavni meni responsive code */
-@media all and (min-width: 480px) and (max-width: 768px) {
-    nav a {
-        font-size: 0.9em;
-        padding: 27px 6px;
-    }
-}
-
-@media all and (max-width: 480px) {
-    nav {
-        grid-auto-flow: row;
-        justify-content: start;
-        padding: 50px 10px 20px 10px;
-        border-bottom: 5px solid #f7a32e;
-        position: relative;
-        z-index: 99;
-        background-color: white;
-    }
-
-    nav a {
-        text-align: left;
-        padding: 10px 10px;
-    }
-
-    nav a:hover {
-        background: transparent;
-    }
-
-}
-
 /* ------------- Glavni meni end -------------- */
 #hero_img {
     background: #ffffff url("../img/hero.jpeg") no-repeat center;
@@ -152,33 +122,6 @@ nav a.active {
     display: flex;
     justify-content: center;
     margin: 20px 0 0 0;
-}
-
-/* 4 offers responsive code */
-@media all and (min-width: 1024px) and (max-width: 1280px) {}
-
-@media all and (min-width: 768px) and (max-width: 1024px) {}
-
-@media all and (min-width: 480px) and (max-width: 768px) {
-    .offers {
-        grid-auto-flow: row;
-        grid-template-columns: 1fr 1fr;
-        place-items: center;
-        grid-column-gap: 10px;
-    }
-
-}
-
-@media all and (max-width: 480px) {
-    .offers {
-        grid-auto-flow: row;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-
-    .offers_item {
-        padding-bottom: 20px;
-        border-bottom: 1px solid #ebebeb;
-    }
 }
 
 #upload_img {
@@ -342,57 +285,6 @@ nav a.active {
     color: white;
 }
 
-/* 3 destinations responsive code */
-
-@media all and (min-width: 1024px) and (max-width: 1280px) {}
-
-@media all and (min-width: 768px) and (max-width: 1024px) {
-    .top_dest {
-        display: grid;
-        grid-auto-flow: row;
-        justify-content: center;
-    }
-
-    .grid_item_dest1,
-    .grid_item_dest2,
-    .grid_item_dest3 {
-        width: 80%;
-        margin: 0 auto;
-        border-top: 10px solid white;
-    }
-}
-
-@media all and (min-width: 480px) and (max-width: 768px) {
-    .top_dest {
-        display: grid;
-        grid-auto-flow: row;
-        justify-content: center;
-    }
-
-    .grid_item_dest1,
-    .grid_item_dest2,
-    .grid_item_dest3 {
-        width: 90%;
-        margin: 0 auto;
-        border-top: 10px solid white;
-    }
-
-}
-
-@media all and (max-width: 480px) {
-    .top_dest {
-        display: grid;
-        grid-auto-flow: row;
-        justify-content: center;
-    }
-
-    .grid_item_dest1,
-    .grid_item_dest2,
-    .grid_item_dest3 {
-        border-top: 10px solid white;
-    }
-}
-
 footer {
     margin-top: 50px;
     padding: 20px 0;
@@ -422,116 +314,237 @@ footer p {
     margin: 0 auto;
     padding-top: 50px;
 }
+
 .gallery1 {
     display: grid;
     grid-template-columns: repeat(4, minmax(200px, 1fr));
     grid-gap: 10px;
     align-items: center;
 }
+
 .gallery_item {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .gallery1 img {
     max-width: 100%;
-    
+
     height: 200px;
     height: 180px;
 }
+
 .gallery__item_1 {
     background: url("../img/gallery/gal (1).jpg") no-repeat center;
     background-size: cover;
     max-width: 100%;
     height: 200px;
 }
+
 .gallery__item_2 {
     background: url("../img/gallery/gal (2).jpg") no-repeat center;
     background-size: cover;
     max-width: 100%;
     height: 200px;
 }
+
 .gallery__item_3 {
     background: url("../img/gallery/gal (3).jpg") no-repeat center;
     background-size: cover;
     max-width: 100%;
     height: 200px;
 }
+
 .gallery__item_4 {
     background: url("../img/gallery/gal (4).jpg") no-repeat center;
     background-size: cover;
     max-width: 100%;
     height: 200px;
 }
+
 .gallery__item_5 {
     background: url("../img/gallery/gal (5).jpg") no-repeat center;
     background-size: cover;
     max-width: 100%;
     height: 200px;
 }
+
 .gallery__item_6 {
     background: url("../img/gallery/gal (6).jpg") no-repeat center;
     background-size: cover;
     max-width: 100%;
     height: 200px;
 }
+
 .gallery__item_7 {
     background: url("../img/gallery/gal (7).jpg") no-repeat center;
     background-size: cover;
     max-width: 100%;
     height: 200px;
 }
+
 .gallery__item_8 {
     background: url("../img/gallery/gal (8).jpg") no-repeat center;
     background-size: cover;
     max-width: 100%;
     height: 200px;
 }
+
 .gallery__item_9 {
     background: url("../img/gallery/gal (9).jpg") no-repeat center;
     background-size: cover;
     max-width: 100%;
     height: 200px;
 }
+
 .gallery__item_10 {
     background: url("../img/gallery/gal (10).jpg") no-repeat center;
     background-size: cover;
     max-width: 100%;
     height: 200px;
 }
-/* Gallery responsive code */
 
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-   
-}
+/* ----------------------------------------------- 
+
+                  RESPONSIVE CSS
+
+-------------------------------------------------- */
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {}
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
+
+    .top_dest {
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: center;
+    }
+
+    .grid_item_dest1,
+    .grid_item_dest2,
+    .grid_item_dest3 {
+        width: 80%;
+        margin: 0 auto;
+        border-top: 10px solid white;
+    }
+
     .gallery1 {
         grid-template-columns: repeat(2, minmax(200px, 1fr));
     }
+
     .gallery1 img {
         max-width: 100%;
         width: 100%;
         height: 200px;
     }
+
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
+
+    nav a {
+        font-size: 0.9em;
+        padding: 27px 6px;
+    }
+
+    .offers {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        grid-column-gap: 10px;
+    }
+
+    .top_dest {
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: center;
+    }
+
+    .grid_item_dest1,
+    .grid_item_dest2,
+    .grid_item_dest3 {
+        width: 90%;
+        margin: 0 auto;
+        border-top: 10px solid white;
+    }
+
     .gallery1 {
         grid-template-columns: repeat(1, minmax(400px, 1fr));
     }
-    .gallery__item_1, .gallery__item_2, .gallery__item_3, .gallery__item_4, .gallery__item_5, .gallery__item_6, .gallery__item_7, .gallery__item_8, .gallery__item_9, .gallery__item_10 {
+
+    .gallery__item_1,
+    .gallery__item_2,
+    .gallery__item_3,
+    .gallery__item_4,
+    .gallery__item_5,
+    .gallery__item_6,
+    .gallery__item_7,
+    .gallery__item_8,
+    .gallery__item_9,
+    .gallery__item_10 {
         height: 350px;
     }
 
 }
 
 @media all and (max-width: 480px) {
+
+    nav {
+        grid-auto-flow: row;
+        justify-content: start;
+        padding: 50px 10px 20px 10px;
+        border-bottom: 5px solid #f7a32e;
+        position: relative;
+        z-index: 99;
+        background-color: white;
+    }
+
+    nav a {
+        text-align: left;
+        padding: 10px 10px;
+    }
+
+    nav a:hover {
+        background: transparent;
+    }
+
+    .offers {
+        grid-auto-flow: row;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .offers_item {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    .top_dest {
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: center;
+    }
+
+    .grid_item_dest1,
+    .grid_item_dest2,
+    .grid_item_dest3 {
+        border-top: 10px solid white;
+    }
+
     .gallery1 {
         grid-template-columns: repeat(1, minmax(200px, 1fr));
     }
-    .gallery__item_1, .gallery__item_2, .gallery__item_3, .gallery__item_4, .gallery__item_5, .gallery__item_6, .gallery__item_7, .gallery__item_8, .gallery__item_9, .gallery__item_10 {
+
+    .gallery__item_1,
+    .gallery__item_2,
+    .gallery__item_3,
+    .gallery__item_4,
+    .gallery__item_5,
+    .gallery__item_6,
+    .gallery__item_7,
+    .gallery__item_8,
+    .gallery__item_9,
+    .gallery__item_10 {
         height: 350px;
     }
 }
-/* ------------- test -------------- */
